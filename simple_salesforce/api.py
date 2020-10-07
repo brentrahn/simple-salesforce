@@ -282,7 +282,7 @@ class Salesforce:
         * other arguments supported by requests.request (e.g. json, timeout)
         """
 
-        url = self.base_url + path
+        url = self.bulk_url + path
         result = self._call_salesforce(method, url, name=path, params=params,
                                        **kwargs)
 
